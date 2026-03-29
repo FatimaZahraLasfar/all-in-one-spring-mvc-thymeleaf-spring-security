@@ -13,8 +13,8 @@ import lombok.*;
 @AllArgsConstructor
 @Getter
 @Setter
-@Builder
 @ToString
+@Builder
 public class Product {
     @Id @GeneratedValue
     private Long id;
@@ -25,5 +25,4 @@ public class Product {
     private double price;
     @Min(1)
     private double quantity;
-
 }
